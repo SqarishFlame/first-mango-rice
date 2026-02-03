@@ -47,21 +47,21 @@ A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink 
 
 ## Dependencies
 
--**fuzzel**
--**waypaper**
--**swaync**
--**cliphist**
--**gtklock**
--**wlogout**
--**kitty**
--**wl-clipboard**
--**awww**
--**NetworkManager**
--**blueman**
--**grim**
--**slurp**
--**nautilus**
--[**pacinstall**](https://github.com/SqarishFlame/pacinstall)
+- **fuzzel**
+- **waypaper**
+- **swaync**
+- **cliphist**
+- **gtklock**
+- **wlogout**
+- **kitty**
+- **wl-clipboard**
+- **awww**
+- **NetworkManager**
+- **blueman**
+- **grim**
+- **slurp**
+- **nautilus**
+- [**pacinstall**](https://github.com/SqarishFlame/pacinstall)
 
 
 ## 🛠️ Components

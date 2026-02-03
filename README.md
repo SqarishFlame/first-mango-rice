@@ -45,6 +45,25 @@ A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink 
 ![Wlogout](assets/wlogout_ss.png)
 *Wlogout power menu*
 
+## Dependencies
+
+-**fuzzel**
+-**waypaper**
+-**swaync**
+-**cliphist**
+-**gtklock**
+-**wlogout**
+-**kitty**
+-**wl-clipboard**
+-**awww**
+-**NetworkManager**
+-**blueman**
+-**grim**
+-**slurp**
+-**nautilus**
+-[**pacinstall**](https://github.com/SqarishFlame/pacinstall)
+
+
 ## 🛠️ Components
 
 - **Compositor**: MangoWC
@@ -68,7 +87,7 @@ A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink 
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/mangowc-rice
+git clone https://github.com/SqarishFlame/first-mango-rice.git
 
 # Install MangoWC
 yay -S mangowc-git

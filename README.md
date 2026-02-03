@@ -7,42 +7,42 @@ A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink 
 ## 📸 Screenshots
 
 ### Tiling Window Layout
-![Tiling](tiling_ss.png)
+![Tiling](assets/tiling_ss.png)
 *btop system monitor + Nautilus file manager*
 
 ### Application Launcher
-![Fuzzel](fuzzel_ss.png)
+![Fuzzel](assets/fuzzel_ss.png)
 *Fuzzel app launcher with beautiful mountain wallpaper*
 
 ### System Info
-![Neofetch](nitch_ss.png)
+![Neofetch](assets/nitch_ss.png)
 *Clean system info with nitch*
 
 ### Text Editor
-![Neovim](nvim_ss.png)
+![Neovim](assets/nvim_ss.png)
 *Neovim with custom config*
 
 ### Browser
-![Zen Browser](zen_ss.png)
+![Zen Browser](assets/zen_ss.png)
 *Zen Browser with sleek UI*
 
-### Package Manager
-![Pacman](pacinstall_ss.png)
+### Package Manager (yay frontend made by me)
+![Pacman](assets/pacinstall_ss.png)
 *Installing packages*
 
 ### File Manager
-![Nautilus](nautilus_ss.png)
+![Nautilus](assets/nautilus_ss.png)
 *Nautilus with dark theme*
 
 ### Notifications
-![SwayNC](swaync_ss.png)
+![SwayNC](assets/swaync_ss.png)
 *SwayNC notification center*
 
-![SwayNC Alt](swaync2_ss.png)
+![SwayNC Alt](assets/swaync2_ss.png)
 *SwayNC with notifications*
 
 ### Power Menu
-![Wlogout](wlogout_ss.png)
+![Wlogout](assets/wlogout_ss.png)
 *Wlogout power menu*
 
 ## 🛠️ Components

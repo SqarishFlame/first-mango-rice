@@ -1,0 +1,401 @@
+* {
+  all: unset;
+  font-size: 14px;
+  font-family: "Ubuntu Nerd Font", sans-serif;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== Scrollbar ===== */
+scrollbar {
+  opacity: 0;
+}
+
+/* ===== Scale/Sliders ===== */
+scale {
+  margin: 0 10px;
+}
+
+scale trough {
+  min-height: 6px;
+  min-width: 80px;
+  border-radius: 16px;
+  background: rgba(54, 58, 79, 0.8);
+  margin: 0 8px;
+}
+
+trough highlight {
+  background: #8aadf4;
+  border-radius: 16px;
+}
+
+trough slider {
+  background: #cad3f5;
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+  margin: -5px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+trough slider:hover {
+  box-shadow: 
+    0 2px 12px rgba(138, 173, 244, 0.6),
+    0 0 0 2px rgba(138, 173, 244, 0.3);
+  transform: scale(1.1);
+}
+
+/* ===== Notifications ===== */
+.notification-background {
+  background: rgba(20, 22, 35, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  margin: 12px;
+  padding: 0;
+  box-shadow: none;
+}
+
+.notification-background .notification {
+  padding: 12px;
+  border-radius: 16px;
+  background: transparent;
+}
+
+.notification-background .notification.critical {
+  box-shadow: inset 0 0 0 2px #ed8796;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.notification .notification-content {
+  margin: 8px;
+}
+
+.notification-content .summary {
+  color: #cad3f5;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.notification-content .time {
+  color: #a5adcb;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.notification .notification-content .body {
+  color: #b8c0e0;
+  font-size: 13px;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* Hide notification body images */
+.notification .body image {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.notification box image {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+.notification .notification-content overlay {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.notification .notification-content image {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Close button */
+.notification-background .close-button {
+  margin: 10px;
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(237, 135, 150, 0.2);
+  color: #ed8796;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.notification-background .close-button:hover {
+  background: #ed8796;
+  color: #24273a;
+  transform: rotate(90deg);
+}
+
+.notification-background .close-button:active {
+  background: #f5bde6;
+  transform: rotate(90deg) scale(0.95);
+}
+
+/* Action buttons */
+.notification .notification-action {
+  border-radius: 10px;
+  color: #cad3f5;
+  background: rgba(54, 58, 79, 0.6);
+  box-shadow: inset 0 0 0 1px rgba(73, 77, 100, 0.5);
+  margin: 6px 4px;
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.notification .notification-action:hover {
+  background: rgba(73, 77, 100, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 
+    inset 0 0 0 1px rgba(138, 173, 244, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notification .notification-action:active {
+  background: #5b6078;
+  transform: translateY(0);
+}
+
+/* Progress bars */
+.notification progress,
+.notification trough,
+.notification progressbar {
+  border-radius: 8px;
+  padding: 0;
+  min-height: 6px;
+}
+
+.notification.critical progress {
+  background: #ed8796;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background: #8aadf4;
+}
+
+/* ===== Control Center ===== */
+.control-center {
+  background: rgba(36, 39, 58, 0.89);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  padding: 16px;
+  margin: 0;
+  box-shadow: none;
+}
+
+.control-center .notification-background {
+  border-radius: 12px;
+  margin: 8px 0;
+  background: rgba(54, 58, 79, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(73, 77, 100, 0.4);
+}
+
+.control-center .notification-background:hover {
+  background: rgba(54, 58, 79, 0.6);
+}
+
+.control-center .notification-background .notification {
+  border-radius: 12px;
+}
+
+/* Widget Title */
+.control-center .widget-title {
+  margin-bottom: 12px;
+  padding: 8px 4px;
+}
+
+.control-center .widget-title > label {
+  color: #cad3f5;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.control-center .widget-title button {
+  border-radius: 10px;
+  background: rgba(237, 135, 150, 0.2);
+  color: #ed8796;
+  padding: 8px 16px;
+  font-size: 13px;
+  box-shadow: none;
+}
+
+.control-center .widget-title button:hover {
+  background: rgba(237, 135, 150, 0.3);
+  transform: translateY(-1px);
+}
+
+.control-center .widget-title button:active {
+  background: rgba(237, 135, 150, 0.4);
+  transform: translateY(0);
+}
+
+/* Notification groups */
+.control-center .notification-group {
+  margin: 12px 0;
+}
+
+.control-center .notification-group:first-child {
+  margin-top: 0;
+}
+
+/* ===== DND Widget ===== */
+.widget-dnd {
+  margin: 12px 0;
+  padding: 12px;
+  background: rgba(54, 58, 79, 0.4);
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.widget-dnd > switch {
+  border-radius: 16px;
+  background: rgba(54, 58, 79, 0.8);
+  min-width: 48px;
+  min-height: 28px;
+}
+
+.widget-dnd > switch:checked {
+  background: linear-gradient(90deg, #8aadf4, #7dc4e4);
+}
+
+.widget-dnd > switch slider {
+  background: #cad3f5;
+  border-radius: 50%;
+  min-width: 22px;
+  min-height: 22px;
+  margin: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.widget-dnd > switch:checked slider {
+  background: #ffffff;
+}
+
+/* ===== MPRIS Widget ===== */
+.widget-mpris {
+  /* The parent to all players */
+}
+
+.widget-mpris-player {
+  padding: 8px;
+  margin: 8px;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}/* ===== Volume Widget ===== */
+.widget-volume {
+  margin: 12px 0;
+  padding: 12px;
+  background: rgba(54, 58, 79, 0.4);
+  border-radius: 12px;
+}
+
+.widget-volume label {
+  color: #7dc4e4;
+  font-size: 18px;
+  margin-right: 12px;
+  min-width: 24px;
+}
+
+.widget-volume trough highlight {
+  background: #7dc4e4;
+}
+
+/* ===== Backlight Widget ===== */
+.widget-backlight {
+  margin: 12px 0;
+  padding: 12px;
+  background: rgba(54, 58, 79, 0.4);
+  border-radius: 12px;
+}
+
+.widget-backlight label {
+  color: #eed49f;
+  font-size: 18px;
+  margin-right: 12px;
+  min-width: 24px;
+}
+
+.widget-backlight trough highlight {
+  background: #eed49f;
+}
+
+/* ===== Inhibitors Widget ===== */
+.widget-inhibitors {
+  margin: 12px 0;
+}
+
+.widget-inhibitors button {
+  border-radius: 10px;
+  background: rgba(54, 58, 79, 0.4);
+  color: #cad3f5;
+  padding: 10px;
+  margin: 4px;
+  font-size: 13px;
+}
+
+.widget-inhibitors button:hover {
+  background: rgba(73, 77, 100, 0.6);
+}
+
+/* ===== Additional Polish ===== */
+.image {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.notification-body-image {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.notification image {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Try to hide the entire body that contains images */
+.control-center .notification .body {
+  opacity: 0;
+  min-height: 0;
+}
+
+/* Smooth entry animations */
+.notification-background {
+  animation: slideIn 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,116 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+
+    "modules-left": [
+        "clock",
+    "ext/workspaces"
+    ],
+    "modules-center": [
+    "dwl/window"
+],
+    "modules-right": [
+        "tray",
+        "memory",
+        "cpu",
+        "custom/notification",
+        "network",
+        "battery",
+        "pulseaudio",
+        "pulseaudio#microphone"
+    ],
+
+    "hyprland/window": {
+        "format": "󰣇 {}"
+    },
+
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%A    %B-%d-%Y    %I:%M:%S %p}",
+        "interval": 1
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂃","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "on-click": "pavucontrol"
+    },
+
+    "pulseaudio#microphone": {
+        "format": " {volume}%",
+        "on-click": "pavucontrol"
+    },
+
+    "memory": {
+        "interval": 10,
+        "format": "󰾆 {used}GB"
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "󰍛 {usage}%"
+    },
+
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀 ",
+        "format-disconnected": "󰖪 ",
+        "interval": 2
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{} {icon}",
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "sleep 0.1 && swaync-client -t -sw",
+        "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+        "escape": true,
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": "󰂛",
+            "inhibited-notification": "",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "",
+            "dnd-inhibited-none": ""
+        }
+    },
+
+  "ext/workspaces": {
+    "format": "{icon}",
+    "ignore-hidden": true,
+    "on-click": "activate",
+    "on-click-right": "deactivate",
+    "sort-by-id": true
+  },
+  "dwl/window": {
+    "format": " [ {layout} ]{title} "
+  }
+
+}
+

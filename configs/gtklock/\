@@ -1,0 +1,3 @@
+[main]
+gtk-theme=adw-gtk3-dark
+time-format=%H:%M

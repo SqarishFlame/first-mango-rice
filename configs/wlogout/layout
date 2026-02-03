@@ -1,0 +1,38 @@
+{
+    "label" : "exit",
+    "action" : "",
+    "text" : "Exit",
+    "keybind" : "h"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+
+{
+    "label" : "suspend",
+    "action" : "gtklock -g 'Catppuccin-BL-MB-Dark-Macchiato'& systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit || pkill mango || pkill dwl",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+
+{
+    "label" : "lock",
+    "action" : "gtklock -g 'Catppuccin-BL-MB-Dark-Macchiato'",
+    "text" : "Lock",
+    "keybind" : "e"
+}

@@ -2,7 +2,8 @@
 
 > My first ever Mango rice 🥭
 
-A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink colorscheme.
+A clean and aesthetic Wayland setup using MangoWC compositor with a catppuccin macchiato colorscheme.
+**warning**--> Things may not work for you as it was made solely for the purpose of being usable atleast to me.
 
 ## 📸 Screenshots
 
@@ -63,6 +64,7 @@ A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink 
 - **nautilus**
 - [**pacinstall**](https://github.com/SqarishFlame/pacinstall)
 - **satty**
+- **hyprshot**
 
 
 ## 🛠️ Components

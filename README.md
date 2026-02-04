@@ -62,6 +62,7 @@ A clean and aesthetic Wayland setup using MangoWC compositor with a purple/pink 
 - **slurp**
 - **nautilus**
 - [**pacinstall**](https://github.com/SqarishFlame/pacinstall)
+- **satty**
 
 
 ## 🛠️ Components
